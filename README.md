@@ -1,6 +1,6 @@
 <span class="smallcaps">Télécom SudParis</span>  
 
-![image](logo.jpg){:height=”50%” width=”50%”}
+![image](logo.jpg){:height=”30%” width=”30%”}
 
 ------------------------------------------------------------------------
 
@@ -10,11 +10,9 @@
 
 ------------------------------------------------------------------------
 
-  
-  
-1970-01-01  
+   
 
-![image](prom.jpg|width=50)
+![image](prom.jpg){:height=”30%” width=”30%”}
 
 # Observability concepts
 
