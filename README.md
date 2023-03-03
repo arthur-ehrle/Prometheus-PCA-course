@@ -1,6 +1,6 @@
 <span class="smallcaps">Télécom SudParis</span>  
 
-![image](logo.jpg)
+![image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.telecom-sudparis.eu%2F&psig=AOvVaw0YAQ3r7xRm76w0v6A2UtVb&ust=1677940205146000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLD01sD8v_0CFQAAAAAdAAAAABAK)
 
 ------------------------------------------------------------------------
 
@@ -14,7 +14,7 @@
   
 1970-01-01  
 
-![image](prom.jpg)
+![image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.credly.com%2Forg%2Fthe-linux-foundation%2Fbadge%2Fpca-prometheus-certified-associate&psig=AOvVaw0PNhqLuEltPG3j40Jycf2a&ust=1677940241632000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLjdi9L8v_0CFQAAAAAdAAAAABAE)
 
 # Observability concepts
 
