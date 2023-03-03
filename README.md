@@ -1,6 +1,6 @@
 <span class="smallcaps">Télécom SudParis</span>  
 
-![image](logo.jpg){:height=”30%” width=”30%”}
+![image](logo.jpg)
 
 ------------------------------------------------------------------------
 
@@ -12,7 +12,7 @@
 
    
 
-![image](prom.jpg){:height=”30%” width=”30%”}
+![image](prom.jpg)
 
 # Observability concepts
 
