@@ -400,8 +400,6 @@ example.
     picture). Each bucket is composed of different values count inferior
     or equal to the bucket value.
 
--   
-
 <https://andykuszyk.github.io/2020-07-24-prometheus-histograms.html>
 <https://medium.com/mercari-engineering/have-you-been-using-histogram-metrics-correctly-730c9547a7a9>
 
