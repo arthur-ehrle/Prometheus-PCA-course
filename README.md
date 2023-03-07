@@ -1,5 +1,4 @@
 
-<span class="smallcaps">Télécom SudParis</span>  
 
 ![image](logo.jpg)
 
