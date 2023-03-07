@@ -1,38 +1,4 @@
-Could not load include file graphicx.sty at line 4 column 22
-Could not load include file enumitem.sty at line 5 column 22
-Could not load include file float.sty at line 6 column 19
-Could not load include file geometry.sty at line 7 column 49
-Could not load include file inputenc.sty at line 8 column 28
-Could not load include file fontenc.sty at line 9 column 25
-Could not load include file babel.sty at line 10 column 27
-Could not load include file graphicx.sty at line 11 column 22
-Could not load include file float.sty at line 12 column 19
-Could not load include file xcolor.sty at line 13 column 20
-Could not load include file fancyhdr.sty at line 14 column 22
-Could not load include file amsmath.sty at line 15 column 21
-Could not load include file lastpage.sty at line 16 column 22
-Could not load include file url.sty at line 17 column 17
-Could not load include file array.sty at line 18 column 19
-Skipped '\pagestyle{fancy}' at line 19 column 18
-Skipped '\fancyhead[L]{ \quad OnCloud }' at line 21 column 31
-Skipped '\fancyhead[R]{Arthur Ehrlé}' at line 22 column 28
-Skipped '\fancyfoot[L]{\quad Prometheus Certified Associate (PCA)}' at line 23 column 58
-Skipped '\fancyfoot[C]{ \textbf{Page \thepage/\pageref{LastPage}}}' at line 26 column 43
-Skipped '\fancyfoot[R]{\today}' at line 27 column 22
-Skipped '\makeatletter' at line 34 column 14
-Skipped '\center' at line 38 column 8
-Skipped '\LARGE' at line 39 column 15
-Skipped '\linewidth' at line 45 column 1
-Skipped '\huge ' at line 47 column 9
-Skipped '\@title ' at line 47 column 27
-Skipped '\linewidth' at line 48 column 1
-Skipped '\@author' at line 49 column 9
-Skipped '\begin{titlepage}' at line 36 column 18
-Skipped '\end{titlepage}' at line 55 column 16
-Skipped '\tableofcontents' at line 56 column 17
-Skipped '\addtocontents{toc}{~\hfill\textbf{Page}\par}' at line 57 column 46
-Skipped '\maketitle{}' at line 58 column 13
-Skipped '\thispagestyle{fancy}' at line 59 column 22
+
 <span class="smallcaps">Télécom SudParis</span>  
 
 ![image](logo.jpg)
@@ -47,7 +13,6 @@ Skipped '\thispagestyle{fancy}' at line 59 column 22
 
   
   
-1970-01-01  
 
 ![image](prom.jpg)
 
