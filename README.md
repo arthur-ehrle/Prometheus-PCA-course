@@ -1,19 +1,3 @@
-![image](logo.jpg)
-
-------------------------------------------------------------------------
-
-  
-**  
-**
-
-------------------------------------------------------------------------
-
-  
-  
-
-
-![image](prom.jpg)
-
 # Observability concepts
 
 ## Metrics
@@ -92,6 +76,8 @@ is running without the need of reload the config file.
 ## Basics of SLOs, SLAs, and SLIs
 
 ![image](sla.jpg)
+
+![image](sla2.jpg)
 
 # Prometheus fundamentals
 
@@ -286,12 +272,14 @@ want to know the average temperature (not just a simple delta between
 the first and last value) during a period of 5mn. By using
 avg_over_time(temperature_instant\[5m\]) we will get :
 
--   temperature_instant{instance=”A”} : 45
+-   {instance=”A”} : 45
 
--   temperature_instant{instance=”B”} : 15
+-   {instance=”B”} : 15
 
 ![image](example.jpg)
 
+Temporal aggregations do not retain the metric name in the result.  
+It will aggregate the value of the different series.
 <https://iximiuz.com/en/posts/prometheus-functions-agg-over-time/>
 
 ## Aggregating over dimensions
@@ -333,7 +321,9 @@ result with a label value like this :
 expression\>)  
 or  
 (\[parameter,\] \<vector expression\>) \[without\|by (\<label
-list\>)\]**
+list\>)\]**  
+Aggregation over dimension will look at the the sample of different
+series with an instant vector.
 
 ## Binary operators
 
@@ -359,6 +349,15 @@ Like bellow :
 
 -   <a href="^" class="uri">^</a>
 
+### Trigonometric binary operator
+
+The following trigonometric binary operators, which work in radians,
+exist in Prometheus:  
+atan2 (based on<https://pkg.go.dev/math#Atan2>)  
+Trigonometric operators allow trigonometric functions to be executed on
+two vectors using vector matching, which isn’t available with normal
+functions. They act in the same manner as arithmetic operators.
+
 ### Comparison binary operator
 
 -    = =
@@ -381,6 +380,20 @@ Like bellow :
 
 -   unless (complement)
 
+### Binary operator precedence
+
+1.  <a href="^" class="uri">^</a>
+
+2.  \*, /, %, atan2
+
+3.  +, -
+
+4.   = =,!=, \< =,\<, \> =,\>
+
+5.  and, unless
+
+6.  or
+
 ## Histograms
 
 Histogram is a specific type of metric, you can see bellow a
@@ -400,6 +413,24 @@ example.
     picture). Each bucket is composed of different values count inferior
     or equal to the bucket value.
 
+![image](hist_sum.jpg)
+
+An histogram metric includes 3 items:
+
+-   A counter with the total number of measurements. The metric name
+    uses the \_count suffix.
+
+-   A counter with the sum of the values of all measurements. The metric
+    name uses the \_sum suffix.
+
+-   The histogram buckets are exposed as counters using the metric name
+    with a \_bucket suffix and a le label indicating the bucket upper
+    inclusive bound. Buckets in Prometheus are inclusive, that is a
+    bucket with an upper bound of N (i.e., le label) includes all data
+    points with a value less than or equal to N.
+
+<https://www.timescale.com/blog/four-types-prometheus-metrics-to-collect/>
+<https://prometheus.io/docs/practices/histograms/>
 <https://andykuszyk.github.io/2020-07-24-prometheus-histograms.html>
 <https://medium.com/mercari-engineering/have-you-been-using-histogram-metrics-correctly-730c9547a7a9>
 
