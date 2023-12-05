@@ -4,8 +4,8 @@
 
 In layperson terms, metrics are numeric measurements. Time series means
 that changes are recorded over time. What users want to measure differs
-from application to application. For a web server it might be request
-times, for a database it might be number of active connections or number
+from applications. For a web server it might be request
+time, for a database it might be number of active connections or number
 of active queries etc.  
 Metrics play an important role in understanding why your application is
 working in a certain way. Let’s assume you are running a web application
@@ -20,7 +20,7 @@ number of servers to handle the load.
 
 An event is a conceptual abstraction and a structured log is one
 possible representation of that abstraction. The interesting part of the
-conversation is where to draw the lines around that abstraction; the
+conversation is where to draw the lines around that abstraction, the
 technical implementation part is how to represent that event.
 
 ## Tracing and Spans
