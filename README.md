@@ -436,7 +436,7 @@ An histogram metric includes 3 items:
 
 ## Timestamp Metrics
 
-Timestamp is a int64 number in millilsecond used to store and reference
+Timestamp is a int64 number in millisecond used to store and reference
 the metric in the TSDB. Each sample/value in Prometheus is stored with a
 value and a timestamp. <https://prometheus.io/docs/concepts/data_model/>
 
