@@ -1,3 +1,7 @@
+<img src=pictures/prom.jpg alt="Description" width="30%" height="auto">
+# Introduction
+I did this course when I worked on the PCA certification. The table of contents is based on the CNCF curriculum for this exam.
+
 - [Observability concepts](#observability-concepts)
    * [Metrics](#metrics)
    * [Understand logs and events](#understand-logs-and-events)
@@ -71,7 +75,7 @@ technical implementation part is how to represent that event.
 
 ## Tracing and Spans
 
-![image](traces.jpg)
+![image](pictures/traces.jpg)
 
 A trace is a collection of operations that represents a unique
 transaction handled by an application and its constituent services. A
@@ -84,7 +88,7 @@ how Gantt charts represent subtask dependencies and durations in a
 project, a distributed trace represents dependencies and duration of
 different microservices processing the request.  
 
-![image](span.jpg)
+![image](pictures/span.jpg)
 
 -   Trace exposes the execution path through a distributed system. Trace
     is composed of one or more spans.
@@ -121,15 +125,15 @@ is running without the need of reload the config file.
 
 ## Basics of SLOs, SLAs, and SLIs
 
-![image](sla.jpg)
+![image](pictures/sla.jpg)
 
-![image](sla2.jpg)
+![image](pictures/sla2.jpg)
 
 # Prometheus fundamentals
 
 ## System Architecture
 
-![image](prom_archi.jpg)
+![image](pictures/prom_archi.jpg)
 
 The Prometheus ecosystem consists of multiple components, many of which
 are optional:
@@ -172,7 +176,7 @@ the “global” key you will find based features like :
 
 -   scrape_configs: the configuration of the jobs and the instances
 
-![image](scrape_ex.jpg)
+![image](pictures/scrape_ex.jpg)
 
 ## Understanding Prometheus Limitations
 
@@ -270,15 +274,15 @@ For the http exposition, today metrics could be exposed with 2 ways.
 
 ## Selecting Data
 
-![image](prom_req.jpg)
+![image](pictures/prom_req.jpg)
 
 -   Instant vector :
 
-    ![image](instant_vect.jpg)
+    ![image](pictures/instant_vect.jpg)
 
 -   Range vector :
 
-    ![image](range_vect.jpg)
+    ![image](pictures/range_vect.jpg)
 
 <https://satyanash.net/software/2021/01/04/understanding-prometheus-range-vectors.html>
 
@@ -309,7 +313,7 @@ This X_over_time(Y) function is usefull to compare multiple range
 vectors. It will compare range vectors on se same interval and returning
 an instant vector.
 
-![image](aggreg.jpg)
+![image](pictures/aggreg.jpg)
 
 On the example below, we could imagine a series named
 temperature_instant with 2 different value of the label {instance}.
@@ -322,7 +326,7 @@ avg_over_time(temperature_instant\[5m\]) we will get :
 
 -   {instance=”B”} : 15
 
-![image](example.jpg)
+![image](pictures/example.jpg)
 
 Temporal aggregations do not retain the metric name in the result.  
 It will aggregate the value of the different series.
@@ -445,7 +449,7 @@ functions. They act in the same manner as arithmetic operators.
 Histogram is a specific type of metric, you can see bellow a
 two-dimension representation :
 
-![image](histo.jpg)
+![image](pictures/histo.jpg)
 
 Prometheus application of histograms is a little bit different than this
 example.
@@ -453,13 +457,13 @@ example.
 -   Each bucket is cumulative, the value will always increase. The same
     example from a Prom view will give that :
 
-    ![image](histo_prom.jpg)
+    ![image](pictures/histo_prom.jpg)
 
 -   Histograms values are composed of buckets (blue rectangle on the
     picture). Each bucket is composed of different values count inferior
     or equal to the bucket value.
 
-![image](hist_sum.jpg)
+![image](pictures/hist_sum.jpg)
 
 An histogram metric includes 3 items:
 
@@ -597,7 +601,7 @@ The main steps to setting up alerting and notifications are:
 Just under, you can find a configuration example of the alert file from
 Prometheus.
 
-![image](alert_ex.jpg)
+![image](pictures/alert_ex.jpg)
 
 Prometheus will have a lot of conditions to start a trigger, the
 expression has to be matched for a certain periode. To write the
@@ -614,7 +618,7 @@ received triggers and send notifications via some channels inluding
 informations. It was do that depending on the content of the label
 alerts that he received.
 
-![image](am_presentation.jpg)
+![image](pictures/am_presentation.jpg)
 
 For example you can define an alert in Prometheus with le label **team:
 NOC-agents** and in Alertmanager you can say that the Alerts marked by
