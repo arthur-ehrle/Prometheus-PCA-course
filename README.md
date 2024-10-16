@@ -52,15 +52,14 @@ I did this course when I worked on the PCA certification. The table of contents 
 
 ## Metrics
 
-In layperson terms, metrics are numeric measurements. Time series means
+In layperson's terms, metrics are numeric measurements. Time series means
 that changes are recorded over time. What users want to measure differs
 from applications. For a web server it might be request
 time, for a database it might be number of active connections or number
 of active queries etc.  
-Metrics play an important role in understanding why your application is
-working in a certain way. Let’s assume you are running a web application
+Metrics play an important role in understanding why your application works in a certain way. Let’s assume you are running a web application
 and find that the application is slow. You will need some information to
-find out what is happening with your application. For example the
+find determine is happening with your application. For example the
 application can become slow when the number of requests are high. If you
 have the request count metric you can spot the reason and increase the
 number of servers to handle the load.
@@ -78,14 +77,14 @@ technical implementation part is how to represent that event.
 ![image](pictures/traces.jpg)
 
 A trace is a collection of operations that represents a unique
-transaction handled by an application and its constituent services. A
+transaction handled by an application and its constituent sea services. A
 span represents a single operation within a trace.  
 A trace is the complete processing of a request. The trace represents
 the whole journey of a request as it moves through all of the services
 of a distributed system.  
 Trace is often visualized using a hierarchical bar chart. Similarly to
-how Gantt charts represent subtask dependencies and durations in a
-project, a distributed trace represents dependencies and duration of
+how Gantt charts represent subtask dependedcies and durations in a
+project, a distributed trace represent dependencies and duration of
 different microservices processing the request.  
 
 ![image](pictures/span.jpg)
@@ -104,24 +103,24 @@ different microservices processing the request.
 
 For the pull approach, the monitoring targets will not send anything to
 the monitoring server. The server will “ask” the targets for the
-metrics. For example Prometheus as a pull approach and is requesting the
+metrics. For example Prometheus has a pull approach and is requesting the
 targets with http.
 
 ### Push
 
-The pull approcah consists of making the target sending their metrics to
+The pull approach consists of making the target send their metrics to
 the monitoring server. In the Prometheus case, if a target doesn’t
-support pull but only push, we can use the “pushgateway” as an
+support pull but only push, we can use the “push gateway” as an
 intermediate.
 
 ## Service Discovery
 
-In the Prometheus architecture, service discovery (SD) consists as a
+In the Prometheus architecture, service discovery (SD) consists of a
 best practice to improve the scalability/maintainability of the
-infrastructure. Define your jobs in the prometheus config file and your
-instances list for SD in exeternal files. The advantages of defining
-instances in a separate file is that you can add once while prometheus
-is running without the need of reload the config file.
+infrastructure. Define your jobs in the Prometheus config file and your
+instances list for SD in external files. The advantage of defining
+instances in a separate file is that you can add once while Prometheus
+is running without the need to reload the config file.
 
 ## Basics of SLOs, SLAs, and SLIs
 
@@ -147,7 +146,7 @@ are optional:
 -   special-purpose exporters for services like HAProxy, StatsD,
     Graphite, etc
 
--   an alertmanager to handle alerts
+-   an alert manager to handle alerts
 
 -   various support tools
 
@@ -156,7 +155,7 @@ and deploy as static binaries.
 
 ## Configuration and Scraping
 
-Config file written in yaml so quite easy to read and understand. After
+The config file is written in yaml so quite easy to read and understand. After
 the “global” key you will find based features like :
 
 -   scrape_interval: periode that will use Prometheus for scraping the
@@ -168,10 +167,10 @@ the “global” key you will find based features like :
 -   scrape_timeout: periode that will use Prometheus to determine if a
     target is unreachable
 
--   rule_files: path of the file were we defined the rules for the
+-   rule_files: path of the file where we defined the rules for the
     triggers
 
--   alerting: the url and the port to send PUSH request to alertmanager
+-   alerting: the URL and the port to send a PUSH request to alert manager
     that will send notifications
 
 -   scrape_configs: the configuration of the jobs and the instances
