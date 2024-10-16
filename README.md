@@ -1,5 +1,5 @@
 <img src=pictures/prom.jpg alt="Description" width="30%" height="auto">
-# Introduction
+## Introduction
 I did this course when I worked on the PCA certification. The table of contents is based on the CNCF curriculum for this exam.
 
 - [Observability concepts](#observability-concepts)
