@@ -1,5 +1,5 @@
 <img src=pictures/prom.jpg alt="Description" width="30%" height="auto">
-## Introduction
+
 I did this course when I worked on the PCA certification. The table of contents is based on the CNCF curriculum for this exam.
 
 - [Observability concepts](#observability-concepts)
@@ -568,11 +568,11 @@ exporter name, e.g. haproxy_up.
 
 Dashboards acts as the presentation layer for a user. It’s the graph
 that you will look frequently to get informations about a system. It has
-to be a developped and effective system. Prometheus is not able to be
+to be a developed and effective system. Prometheus is not able to be
 qualified as a data-visualisation tool. Of course, it has a web gui, but
-it’s only usefull to test your PromQL queries. You should use a
+it’s only useful to test your PromQL queries. You should use a
 third-party tool like Grafana to visualize your data.  
-There is some recommandations for the creation of your dashboards that
+There is some recommendations for the creation of your dashboards that
 you can find in the official documentation like :
 
 -   Have no more than 5 graphs on a console.
